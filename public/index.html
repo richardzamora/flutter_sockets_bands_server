@@ -24,6 +24,13 @@
         socket.on("mensaje", function(payload){
             console.log('escuchando', payload);
         })
+        socket.on("emitir-mensaje", function(payload){
+            console.log('escuchando', payload);
+        })
+        socket.on("active-bands", function(payload){
+            console.clear();
+            console.table(payload);
+        })
 
     </script>
 </body>
